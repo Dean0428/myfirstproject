@@ -1,0 +1,14 @@
+git ssh配置
+
+先生成公钥和秘钥.pub文件
+将公钥放在home/.ssh目录下
+将秘钥内容copy至github账号设置的SSH　keys中
+
+
+测试，看下是否通过
+ssh -T git@github.com
+
+
+不通就是
+ssh-agent -s
+ssh-add ~/.ssh/id_rsa 操作这两步
